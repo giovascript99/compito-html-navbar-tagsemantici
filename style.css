@@ -1,104 +1,77 @@
-
-
-* {    
-    text-decoration: none;
-}
-
 body {
-    height: 2000px;
     font-family: montserrat;
-    margin: 0px;
-    background-color: white;
-    padding-top: 50px;
+    padding-top: 60px;
 }
 
-nav {
+/* navbar */
+
+nav{
     background-color: white;
     position: fixed;
     top: 0px;
     width: 100%;
-    height: 60px;
-    z-index: 999;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    height: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
+    z-index: 999;
+
 }
 
-nav .logo {
-    color: rgb(79, 79, 79);
-    height: 40px;
-    width: auto;
-    margin: 0px 10px;
+nav img{
+    height: 50px;
 }
 
-.navbar-element .telefono {
-    display: flex;
-}
+/* header */
 
-#contattaci {
-    margin: 10px;
-}
-
-#numcell {
-    background-color: yellow;
-    border: none;
-    border-radius: 20px;
-    padding: 10px;
-    margin-top: 3px;
-}
-
-
-#tendina{
-    padding-right: 10px;
-    font-size: 20px;
-}
-
-.blog {
+header{
+    
     padding-left: 10px;
     background-color: #EEEEEE;
 }
 
-h1 {
+h1{
     font-size: 60px;
     font-weight: 400;
     margin: 0px;
     padding: 50px 0px 10px 0px;
 }
 
-.blog p {
+header p{
     font-size: 20px;
     font-weight: 350;
     margin: 0px;
     padding: 10px 0px 30px 0px;
 }
 
-.blog p a {
+header p a{
+    text-decoration: none;
     padding: 0px 5px 0px 10px;
     color: black;
 }
 
-
-.contenitore-slide {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-h2 {
+h2{
     color: #1D1D1B;
-    text-align: center;
     font-size: 40px;
     font-weight: 400;
-    line-height: 42px;
     margin: 30px;
 }
 
+/* main */
 
-.slide {
-    height: 620px;
+h2{
+    text-align: center;
+}
+
+.sezione{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
     width: 400px;
+    height: 500px;
     background-color: #F7F9FA;
     border: 2px #F7F9FA;
     border-radius: 20px;
@@ -106,78 +79,11 @@ h2 {
     padding: 10px;
 }
 
-.slide img {
-    margin: -8px;
-    width: 396px;
-    height: auto;
+.box img{
+    width: 100%;
     border-radius: 20px 20px 0px 0px;
 }
 
-.contenitore-slide h3 {
-    margin-bottom: 8px;
-}
-
-.contenitore-slide h3 a {
-    color: black;
-    font-size: 22px;
-    font-weight: 380;
-}
-
-
-.slide .data {
-    margin: 0px 8px;
-    padding: 10px 0px;
-}
-
-.slide .time {
-    padding: 0px 0px 0px 5px;
-}
-
-
-.slide .box-inferiore {
+.box .box-inferiore{
     padding: 10px;
 }
-
-.slide .testo {
-    margin-top: 80px;
-    height: 155px;
-}
-
-.slide .testo a {
-    color: #585c7b;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.button {
-    display: inline-block;
-    background-color: white;
-    color: black;
-    font-weight: 700;
-    border: none;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 2.4px;
-    transition: all 0.3s ease-in-out;
-    
-}
-
-.button:hover {
-    background-color: yellow;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-    animation: bounce 0.3s ease-in-out;
-}
-
-@keyframes bounce {
-    0% {
-        transform: translateY(-2px);
-    }
-    50% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-2px);
-    }
-}
-
